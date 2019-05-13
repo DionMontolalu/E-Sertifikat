@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Testing Sambutan</title>
+</head>
+
+<body>
+	<p>Dr. dr. Rocky Wilar, Sp.A(K)<br>
+	<b>Ketua Bagian Ilmu Kesehatan Anak</b>
+	</p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById('p1');
+    var z = document.getElementById('p2');
+    var s = document.getElementById('s');
+    var k = document.getElementById('k');
+
+    if (x.style.display === 'none'){
+        x.style.display = 'block';
+        z.style.display = 'block';
+        s.style.display = 'none';
+        k.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+        z.style.display = 'none';
+        s.style.display = 'block';
+        k.style.display = 'none';
+    }
+}
+</script>
+	<p>
+		Selamat datang di website Bagian Ilmu Kesehatan Anak Fakultas Kedokteran Universitas Sam Ratulangi. kami panjatkan puji syukur ke hadirat Tuhan Yang Maha Esa karena kasih karunianya, kami dapat merealisasikan website ini. 
+	</p>
+	<p id="p1" style="display:none;">
+		Program Pendidikan Dokter Spesialis Anak Fakultas Kedokteran Universitas Sam Ratulangi telah berdiri sejak tahun 1982 dan hingga tahun 2010 telah menghasilkan 118 dokter spesialis anak yang saat ini telah tersebar di seluruh penjuru nusantara.
+	</p>
+	<p id="p2" style="display:none;">
+		Melalui website ini, kami harap dapat memberikan informasi terkait Ilmu Kesehatan Anak Fakultas Kedokteran Universitas Sam Ratulangi bagi segenap civitas akademika Fakultas Kedokteran Universitas Sam Ratulangi dan seluruh masyarakat umum. Semoga website ini dapat memberikan manfaat bagi kita semua.
+	</p>
+	<input type="button" id="s" onclick="myFunction()" value="Selengkapnya>>">
+	<input type="button" id="k" onclick="myFunction()" style="display:none;" value="<<Kembali">
+</body>
+</html>
